@@ -1,0 +1,116 @@
+
+/* ================================================================
+This copyright notice must be kept untouched in the stylesheet at
+all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.stunicholls.com/menu/vertical-concertina-6.html
+Copyright (c) 2005-2008 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any
+way to fit your requirements.
+=================================================================== */
+
+/* #slide height = (number of top level links - 1) * height of links + inner div height */
+
+#slide
+{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 165px;
+  height: 415px;
+  border: 1px solid #ccc;
+  position: relative;
+  overflow: hidden;
+  font-family: verdana, sans-serif;
+  font-size: 11px;
+}
+#slide li.sub, #slide li.top
+{
+  display: block;
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  width: 165px;
+  color: #000;
+  background: #eee;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  text-indent: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#slide li.sub
+{
+  color: #000;
+  background: #eee url(images/widget_closed.gif) no-repeat 5px 8px;
+}
+#slide li.top a
+{
+  text-decoration: none;
+  color: #000;
+  display: block;
+  background: url(images/widget_closed.gif) no-repeat 5px 8px;
+}
+#slide li.top a:hover
+{
+  color: #069;
+  background: #ddd url(images/widget_closed_hov.gif) no-repeat 5px 8px;
+}
+#slide li.clicked
+{
+  color: #800;
+  background: #ddd url(images/widget_open.gif) no-repeat 5px 8px;
+}
+
+#slide li.highlight
+{
+  color: #c00;
+  background: #ddd url(images/widget_open.gif) no-repeat 5px 8px;
+}
+
+/* #slide li.sub div height = (maximum sub lines * sub line height) + top level link height(variable fY in jQuery) */
+
+#slide li.sub div
+{
+  background: #fff;
+  height: 265px;
+  width: 135px;
+  padding: 0 15px;
+  line-height: 1.2em;
+  font-family: verdana, sans-serif;
+  text-indent: 0;
+}
+#slide li div ul
+{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#slide li div ul li
+{
+  float: left;
+  height: 20px;
+  width: 100%;
+}
+#slide li div ul li a
+{
+  padding: 0;
+  margin: 0;
+  color: #888;
+  text-decoration: none;
+  background: #fff url(images/widget_closed.gif) no-repeat 5px 6px;
+  font-size: 10px;
+  display: block;
+  border-bottom: 1px solid #ddd;
+  height: 19px;
+  line-height: 19px;
+  width: 100%;
+  text-indent: 18px;
+}
+#slide li div ul li a:hover
+{
+  color: #069;
+  background: #fff url(images/widget_closed_hov.gif) no-repeat 5px 6px;
+}
+
